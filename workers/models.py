@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Worker(models.Model):
-    id = models.IntegerField(primary_key=True, verbose_name='ID')
+    id = models.AutoField(primary_key=True, verbose_name='ID')
     fio = models.CharField(max_length=255, verbose_name='ФИО')
     team = models.IntegerField(verbose_name='Номер бригады')
     salary = models.IntegerField(verbose_name='Зарплата')
